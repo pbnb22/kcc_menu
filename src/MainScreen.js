@@ -101,19 +101,19 @@ export const MainScreen = (props) => {
     if (Platform.OS === 'android'){
       return(
         <BannerAd
-        unitId={''}
+        unitId={'ca-app-pub-7624142922095364/4771086157'}
         size={BannerAdSize.FULL_BANNER}
         />
       );
     }
-    else{
-      return(
-        <BannerAd
-        unitId={''}
-        size={BannerAdSize.FULL_BANNER}
-        />
-      );
-    }
+    // else{
+    //   return(
+    //     <BannerAd
+    //     unitId={''}
+    //     size={BannerAdSize.FULL_BANNER}
+    //     />
+    //   );
+    // }
 
   }
 
@@ -263,7 +263,7 @@ export const MainScreen = (props) => {
             {menulist ? viewMenu() : ''}
           </View>
         </ScrollView>
-        {/* {admob()} */}
+        {admob()}
         <Modal 
         isVisible={CalVisible}
         onBackdropPress={() => setCalVisible(false)}
