@@ -1,6 +1,10 @@
 {
   "name": "kccmenu",
+<<<<<<< HEAD
   "displayName": "KCC연구소 식단",
+=======
+  "displayName": "kccmenu",
+>>>>>>> master
   "react-native-google-mobile-ads": {
     "android_app_id": "ca-app-pub-7624142922095364~6879725817",
     "ios_app_id": "ca-app-pub-xxxxxxxx~xxxxxxxx"

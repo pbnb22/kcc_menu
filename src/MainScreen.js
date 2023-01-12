@@ -5,7 +5,7 @@ import { format } from 'date-fns'
 import FastImage from "react-native-fast-image";
 import Spinner from 'react-native-loading-spinner-overlay';
 import { createImageProgress } from 'react-native-image-progress';
-// import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import { Platform } from 'react-native';
 import  { Calendar, }  from  'react-native-calendars' ;
 import Modal from "react-native-modal";
