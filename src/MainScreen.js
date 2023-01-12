@@ -5,7 +5,7 @@ import { format } from 'date-fns'
 import FastImage from "react-native-fast-image";
 import Spinner from 'react-native-loading-spinner-overlay';
 import { createImageProgress } from 'react-native-image-progress';
-// import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import { Platform } from 'react-native';
 import  { Calendar, }  from  'react-native-calendars' ;
 import Modal from "react-native-modal";
@@ -101,19 +101,19 @@ export const MainScreen = (props) => {
     if (Platform.OS === 'android'){
       return(
         <BannerAd
-        unitId={''}
+        unitId={'ca-app-pub-7624142922095364/4771086157'}
         size={BannerAdSize.FULL_BANNER}
         />
       );
     }
-    else{
-      return(
-        <BannerAd
-        unitId={''}
-        size={BannerAdSize.FULL_BANNER}
-        />
-      );
-    }
+    // else{
+    //   return(
+    //     <BannerAd
+    //     unitId={''}
+    //     size={BannerAdSize.FULL_BANNER}
+    //     />
+    //   );
+    // }
 
   }
 
@@ -263,7 +263,7 @@ export const MainScreen = (props) => {
             {menulist ? viewMenu() : ''}
           </View>
         </ScrollView>
-        {/* {admob()} */}
+        {admob()}
         <Modal 
         isVisible={CalVisible}
         onBackdropPress={() => setCalVisible(false)}
