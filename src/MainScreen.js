@@ -1,5 +1,5 @@
 import React, { useEffect, useState, } from "react";
-import {StyleSheet, View, Text, Image, TouchableOpacity, ScrollView, SafeAreaView,} from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableOpacity, ScrollView, SafeAreaView, StatusBar } from 'react-native';
 import axios from 'axios'; //For pbnb API Test
 import { format } from 'date-fns'
 import FastImage from "react-native-fast-image";
@@ -9,6 +9,7 @@ import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads'
 import { Platform } from 'react-native';
 import  { Calendar, }  from  'react-native-calendars' ;
 import Modal from "react-native-modal";
+
 
 const Imageload = createImageProgress(FastImage);
 
@@ -106,14 +107,14 @@ export const MainScreen = (props) => {
         />
       );
     }
-    // else{
-    //   return(
-    //     <BannerAd
-    //     unitId={''}
-    //     size={BannerAdSize.FULL_BANNER}
-    //     />
-    //   );
-    // }
+    else{
+      return(
+        <BannerAd
+        unitId={'ca-app-pub-7624142922095364/6088589565'}
+        size={BannerAdSize.FULL_BANNER}
+        />
+      );
+    }
 
   }
 
@@ -182,9 +183,11 @@ export const MainScreen = (props) => {
     setDate(day);
   }
 
+  
   return(
     /** 전체 화면 표기 부분 */
     <SafeAreaView>
+      <StatusBar barStyle="default" />
       <View style = {styles.maincontainer}>
         <View style = {styles.container_topbar}>
           <Text style={{color: 'white', fontSize: 16, marginLeft:30}}>
