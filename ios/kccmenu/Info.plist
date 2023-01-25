@@ -62,5 +62,17 @@
 			<string>cstr6suwn9.skadnetwork</string>
 		</dict>
 	</array>
+
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+		<key>SKAdNetworkIdentifier</key>
+		<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+	</array>
+	
+	<key>NSUserTrackingUsageDescription</key>
+	<string>추적을 허용하시면, 불필요한 광고 대신 관심사 맞춤형 광고를 받으실 수 있습니다. 추적을 허용하지 않더라도 광고는 노출됩니다.</string>
+
 </dict>
 </plist>
